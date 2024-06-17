@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+body {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  font-family: "Playwrite IS", cursive;
+}
+h1, h2, h3 {
+  font-family:'Courier New', Courier, monospace;
+}
+.inner-body {
+  margin: 50px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+.text-center {
+  text-align: center;
+}
+
+.presentation {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+.presentation img {
+  max-width: 300px;
+  width: 100%;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.presentation .card {
+  width: 50%;
+  padding: 1rem;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.social-media ul  li :hover {
+ color: green;
+}
+
+.social-media ul  li {
+  font-size: 1.5rem;
+  color: brown;
+ }
+.text-align-left {
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  .presentation {
+    display: block;
+  }
+  .presentation .card {
+    width: 100%;
+  }
+  .presentation img {
+    max-width: 190px;
+    width: 100%;
+  }
+}
